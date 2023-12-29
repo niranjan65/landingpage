@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import Pricing from './components/Pricing';
+import Frequently from './components/Frequently';
+import Footer from './components/Footer';
+import Frame from './components/Frame';
+import HowItWork from './components/HowItWork';
+import QuoteSection from './components/QuoteSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mx-auto w-full md:w-[1024px] lg:w-[1440px]'>
+      <Home/>
+      <Frame/>
+      <HowItWork/>
+      <QuoteSection/>
+      <Pricing/>
+      <Frequently/>
+      <Footer/>
     </div>
   );
 }
